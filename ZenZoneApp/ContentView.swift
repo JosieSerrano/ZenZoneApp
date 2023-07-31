@@ -14,10 +14,7 @@ struct ContentView: View {
     
     @State private var username = ""
     @State private var password = ""
-    @State private var wrongUsername = 0
-    @State private var wrongPassword = 0
-    @State private var showingLoginScreen = false
-    
+ 
     //Light Peach
     
     let lightPeach = UIColor(red: 0.996078431372549, green: 0.8705882352941177, blue: 0.807843137254902, alpha: 1)
