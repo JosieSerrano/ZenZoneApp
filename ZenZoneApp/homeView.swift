@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct homeView: View {
+    @State var showResourceTwoView: Bool = false
     
     //Light Peach
     
@@ -27,64 +28,62 @@ struct homeView: View {
     
     @State var tabSelection = 1
     var body: some View {
-    
-       
-               
-                
+        
+        
+        
+        
+        NavigationStack{
             
-            NavigationStack{
+            
+            
+            ZStack{
+                
+                Color(teaGreen).ignoresSafeArea()
                 
                 
-                               
+    
                 
-                    ZStack{
-                        
-                        Color(teaGreen).ignoresSafeArea()
-                        
-                        
-                        Rectangle()
-                            .frame(width: 180, height: 250)
-                            .cornerRadius(50)
-                            .position(x:150, y:140)
-                            .foregroundColor(Color.white)
-                        
-                        
-                        Rectangle()
-                            .frame(width: 180, height: 250)
-                            .cornerRadius(50)
-                            .position(x:350, y:140)
-                            .foregroundColor(Color.white)
-                        
-                        
-                        Rectangle()
-                            .frame(width: 180, height: 250)
-                            .cornerRadius(50)
-                            .position(x:350, y:575)
-                            .foregroundColor(Color.white)
-                        
-                        
-                        Rectangle()
-                            .frame(width: 180, height: 250)
-                            .cornerRadius(50)
-                            .position(x:150, y:575)
-                            .foregroundColor(Color.white)
-                        
-                        Image("Koala")
-                        
-                    }
-               
-                    }
+              
+                NavigationLink(destination:Resource_1()) {
+                    Text("Having Trouble Breathing?")
+                }
+                                        .fontDesign(.serif)
+                                        .position(x:0, y:-75)
+                                        .frame(width: 180, height: 250)
+                                        .multilineTextAlignment(.center)
+                                        .buttonStyle(.borderedProminent)
+                                        .tint(.white)
+                                        .font(.largeTitle)
+                                        .foregroundColor(.gray)
+                                        .padding()
+                    
+                    
+                    
+                    
+                    
+                Image("Koala")
+                    .resizable()
+                    .frame(width:150, height: 150)
                     
                 }
-                    
-                }
-         
-    
-    
-
-
-struct homeView_Previews: PreviewProvider {
-    static var previews: some View {
-        SwiftUIView()
+                
+            }
+            
+            
+            
+        }
+        
     }
-}
+    
+    
+    
+
+
+    
+    
+    
+    struct homeView_Previews: PreviewProvider {
+        static var previews: some View {
+            homeView()
+        }
+    }

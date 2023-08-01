@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD1A01B62A796B91000F128D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1A01B52A796B91000F128D /* SwiftUIView.swift */; };
 		BD1A01B82A796CA1000F128D /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1A01B72A796CA1000F128D /* CalenderView.swift */; };
 		BD6713CC2A780FBC003A483C /* ZenZoneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6713CB2A780FBC003A483C /* ZenZoneAppApp.swift */; };
 		BD6713CE2A780FBC003A483C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6713CD2A780FBC003A483C /* ContentView.swift */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		BD1A01B52A796B91000F128D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		BD1A01B72A796CA1000F128D /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		BD6713C82A780FBC003A483C /* ZenZoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenZoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6713CB2A780FBC003A483C /* ZenZoneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenZoneAppApp.swift; sourceTree = "<group>"; };
@@ -67,10 +65,9 @@
 			children = (
 				BD6713CB2A780FBC003A483C /* ZenZoneAppApp.swift */,
 				BD6713CD2A780FBC003A483C /* ContentView.swift */,
-				BD1A01B52A796B91000F128D /* SwiftUIView.swift */,
 				BD6713DB2A781B6D003A483C /* homeView.swift */,
-				BD1A01B72A796CA1000F128D /* CalenderView.swift */,
 				BD74E5732A78419000F9A99F /* Resource 1.swift */,
+				BD1A01B72A796CA1000F128D /* CalenderView.swift */,
 				BD74E5752A78419F00F9A99F /* Resource 2.swift */,
 				BD74E5772A7841AB00F9A99F /* Resource 3.swift */,
 				BD74E5792A7841B700F9A99F /* Resource 4.swift */,
@@ -161,7 +158,6 @@
 				BD74E57A2A7841B700F9A99F /* Resource 4.swift in Sources */,
 				BD74E5742A78419000F9A99F /* Resource 1.swift in Sources */,
 				BD1A01B82A796CA1000F128D /* CalenderView.swift in Sources */,
-				BD1A01B62A796B91000F128D /* SwiftUIView.swift in Sources */,
 				BD6713CE2A780FBC003A483C /* ContentView.swift in Sources */,
 				BD6713CC2A780FBC003A483C /* ZenZoneAppApp.swift in Sources */,
 				BD74E5762A78419F00F9A99F /* Resource 2.swift in Sources */,
