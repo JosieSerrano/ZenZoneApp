@@ -48,18 +48,42 @@ struct homeView: View {
                     Text("Having Trouble Breathing?")
                 }
                                         .fontDesign(.serif)
-                                        .position(x:0, y:-75)
+                                        .position(x:-10, y:-75)
                                         .frame(width: 180, height: 250)
                                         .multilineTextAlignment(.center)
                                         .buttonStyle(.borderedProminent)
                                         .tint(.white)
-                                        .font(.largeTitle)
+                                        .font(.title)
                                         .foregroundColor(.gray)
                                         .padding()
                     
-                    
-                    
-                    
+                
+                NavigationLink(destination:Resource_2()) {
+                    Text("Stressful Surroudings?")
+                }
+                                        .fontDesign(.serif)
+                                        .position(x:179, y:-75)
+                                        .frame(width: 180, height: 250)
+                                        .multilineTextAlignment(.center)
+                                        .buttonStyle(.borderedProminent)
+                                        .tint(.white)
+                                        .font(.title)
+                                        .foregroundColor(.gray)
+                                        .padding()
+
+                NavigationLink(destination:Resource_3()) {
+                    Text("Stressful Environment?")
+                }
+                                        .fontDesign(.serif)
+                                        .position(x:190, y:-75)
+                                        .frame(width: 180, height: 250)
+                                        .multilineTextAlignment(.center)
+                                        .buttonStyle(.borderedProminent)
+                                        .tint(.white)
+                                        .font(.title)
+                                        .foregroundColor(.gray)
+                                        .padding()
+
                     
                 Image("Koala")
                     .resizable()
