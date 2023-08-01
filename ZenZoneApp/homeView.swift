@@ -39,10 +39,7 @@ struct homeView: View {
             ZStack{
                 
                 Color(teaGreen).ignoresSafeArea()
-                
-                
-    
-                
+                //add zen zone title on the top of each view
               
                 NavigationLink(destination:Resource_1()) {
                     Text("Having Trouble Breathing?")
@@ -72,10 +69,10 @@ struct homeView: View {
                                         .padding()
 
                 NavigationLink(destination:Resource_3()) {
-                    Text("Stressful Environment?")
+                    Text("Trouble With Thoughts?")
                 }
                                         .fontDesign(.serif)
-                                        .position(x:190, y:-75)
+                                        .position(x:-10, y:300)
                                         .frame(width: 180, height: 250)
                                         .multilineTextAlignment(.center)
                                         .buttonStyle(.borderedProminent)
@@ -85,6 +82,19 @@ struct homeView: View {
                                         .padding()
 
                     
+                NavigationLink(destination:Resource_4()) {
+                    Text("In Need Of A Distraction?")
+                }
+                                        .fontDesign(.serif)
+                                        .position(x:179, y:300)
+                                        .frame(width: 180, height: 250)
+                                        .multilineTextAlignment(.center)
+                                        .buttonStyle(.borderedProminent)
+                                        .tint(.white)
+                                        .font(.title)
+                                        .foregroundColor(.gray)
+                                        .padding()
+                
                 Image("Koala")
                     .resizable()
                     .frame(width:150, height: 150)
