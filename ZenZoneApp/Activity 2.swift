@@ -9,11 +9,11 @@ import SwiftUI
 
 struct Activity_2: View {
     
-    @State private var see = ""
-    @State private var touch = ""
-    @State private var hear = ""
-    @State private var smell = ""
-    @State private var taste = ""
+    @State private var see = "List 5 Things You Can See..."
+    @State private var touch = "List 4 Things You Can Touch..."
+    @State private var hear = "List 3 Things You Can Hear..."
+    @State private var smell = "List 2 Things You Can Smell..."
+    @State private var taste = "List 1 Thing You Can Taste..."
     
     
     //Light Peach
@@ -36,45 +36,57 @@ struct Activity_2: View {
                 Text("54321 Exercise")
                     .font(.largeTitle)
                     .fontWeight(.light)
+                    .fontDesign(.serif)
 
-            
+            //List 5 things you can see
                 
-                TextField("List 5 Things You See", text: $see)
+                TextEditor(text: $see)
                     .multilineTextAlignment(.center)
-                    .font(.title)
                     .background(Color(Tangerine))
                     .cornerRadius(15)
                     .padding()
+                    .font(.title3)
+                    .foregroundColor(Color(Tangerine))
                     
                 
+                //List 4 Things You Can Touch
                 
-                
-                TextField("List 4 Things You Can Touch", text: $touch)
+                TextEditor(text: $touch)
                     .multilineTextAlignment(.center)
-                    .font(.title)
                     .background(Color(Tangerine))
                     .cornerRadius(15)
+                    .font(.title3)
+                    .foregroundColor(Color(Tangerine))
                     .padding()
                 
-                TextField("List 3 Things You Can Hear", text: $hear)
+               // "List 3 Things You Can Hear"
+                
+                TextEditor(text: $hear)
                     .multilineTextAlignment(.center)
-                    .font(.title)
                     .background(Color(Tangerine))
                     .cornerRadius(15)
+                    .font(.title3)
+                    .foregroundColor(Color(Tangerine))
                     .padding()
                 
-                TextField("List 2 Things You Can Smell", text: $smell)
+                
+               // "List 2 Things You Can Smell",
+                TextEditor( text: $smell)
                     .multilineTextAlignment(.center)
-                    .font(.title)
                     .background(Color(Tangerine))
                     .cornerRadius(15)
+                    .font(.title3)
+                    .foregroundColor(Color(Tangerine))
                     .padding()
+                
+               // "List 1 Thing You Can Taste"
 
-                TextField("List 1 Thing You Can Taste", text: $taste)
+                TextEditor(text: $taste)
                     .multilineTextAlignment(.center)
-                    .font(.title)
                     .background(Color(Tangerine))
                     .cornerRadius(15)
+                    .font(.title3)
+                    .foregroundColor(Color(Tangerine))
                     .padding()
                 
                 
