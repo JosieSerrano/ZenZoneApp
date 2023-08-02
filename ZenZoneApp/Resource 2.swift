@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct Resource_2: View {
+    
+    
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Resource 2")
     }
 }
-
+               
 struct Resource_2_Previews: PreviewProvider {
     static var previews: some View {
         Resource_2()
