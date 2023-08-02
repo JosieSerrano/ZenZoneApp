@@ -30,7 +30,7 @@ struct homeView: View {
         
         
         
-        
+        NavigationView{
         NavigationStack{
             
            
@@ -109,31 +109,31 @@ struct homeView: View {
                    
                 }
                 .toolbar{
-
-
+                    
+                    
                     ToolbarItemGroup(placement: .status){
-                       
-
-
-                       
-                       
-                            HStack{
-                              
-                                    NavigationLink(destination: CalenderView() ){
-                                        VStack{
-                                    Image(systemName: "calendar")
+                        
+                        
+                        
+                        
+                        
+                        HStack{
+                            
+                            NavigationLink(destination: LogView() ){
+                                VStack{
+                                    Image(systemName: "book.closed")
                                         .foregroundColor(.white)
                                         .font(.largeTitle)
-                                    Text("Calendar")
+                                    Text("Log")
                                         .foregroundColor(.white)
                                         .font(.title3)
                                 }
                                 .padding()
                                 
                                 
-                           
-                                    NavigationLink(destination:homeView()){
-                                        VStack{
+                                
+                                NavigationLink(destination:homeView()){
+                                    VStack{
                                         Image(systemName: "house")
                                             .foregroundColor(.white)
                                             .font(.largeTitle)
@@ -144,32 +144,34 @@ struct homeView: View {
                                 }
                                 .padding()
                                 
-                                        NavigationLink(destination:HotlineView()){
-                                            VStack{
-                                                Image(systemName:"phone")
-                                                    .foregroundColor(.white)
-                                                    .font(.largeTitle)
-                                                Text("Hotlines")
-                                                    .foregroundColor(.white)
-                                                    .font(.title3)
-                                            }
-                                           
-
+                                NavigationLink(destination:HotlineView()){
+                                    VStack{
+                                        Image(systemName:"phone")
+                                            .foregroundColor(.white)
+                                            .font(.largeTitle)
+                                        Text("Hotlines")
+                                            .foregroundColor(.white)
+                                            .font(.title3)
+                                    }
+                                    
+                                    
                                 }
                                 .padding()
                             }
-
+                            
                         }
-                       
-
+                        
+                        
                     }
-                   
-
+                    
+                }
                   
                 }
 
                 
             }
+        .navigationBarBackButtonHidden(false)
+        .navigationBarHidden(false)
             
         }
         

@@ -123,14 +123,14 @@ struct HotlineView: View {
                                     HStack{
                                         
                                         
-                                        NavigationLink(destination: CalenderView())
+                                        NavigationLink(destination: LogView())
                                         {
                                             
                                             VStack{
-                                                Image(systemName: "calendar")
+                                                Image(systemName: "book.closed")
                                                     .foregroundColor(.white)
                                                     .font(.largeTitle)
-                                                Text("Calendar")
+                                                Text("Log")
                                                     .foregroundColor(.white)
                                                     .font(.title3)
                                             }
@@ -170,12 +170,13 @@ struct HotlineView: View {
 
                 }
                 
-                    .navigationBarTitleDisplayMode(.inline)
-                    .navigationBarBackButtonHidden()
-                    
+                 
                                   
                 }
             }
+            .navigationBarBackButtonHidden(false)
+            .navigationBarHidden(false)
+            
         }
     }
 }

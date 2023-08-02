@@ -68,34 +68,37 @@ struct ContentView: View {
                         .background(Color.black.opacity(0.05))
                         .cornerRadius(10)
                     
-                        .toolbar {
-                            ToolbarItemGroup(placement: .status){
-                                NavigationLink(destination:homeView()) {
-                                    Text("Login")
-                                        .font(.largeTitle)
-                                        .fontDesign(.serif)
-                                }
-                                .foregroundColor(.black)
-                                .frame(width:300, height:50)
-                                .background(Color.white)
-                                .cornerRadius(10)
-                                
+                    
+                    NavigationLink(destination:homeView()) {
+                        Text("Login")
+                    }
+                    .fontDesign(.serif)
+                    .frame(width: 180, height: 250)
+                    .multilineTextAlignment(.center)
+                    .buttonStyle(.borderedProminent)
+                    .tint(.white)
+                    .font(.title)
+                    .foregroundColor(Color(Tangerine))
+                    .padding()
                                 
                             }
-                            
+               
+                }
+                           
+            .navigationBarBackButtonHidden(false)
+            .navigationBarHidden(false)
+
                         }
                     
-                    
-                        .navigationBarHidden(true)
+
                     
                 }
                 
                 
             }
-        }
-        
-    }
-}
+       
+
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
