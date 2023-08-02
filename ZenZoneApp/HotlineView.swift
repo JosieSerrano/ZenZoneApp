@@ -27,61 +27,151 @@ struct HotlineView: View {
        
         NavigationView{
             ZStack{
-                Color(Tangerine).ignoresSafeArea()
+                Color(rosyCheeks).ignoresSafeArea()
+                
             VStack{
-                Text("Hotlines")
+                Spacer()
+                VStack{
+                    Text("National Suicide and Crisis Lifeline")
+                        .multilineTextAlignment(.center)
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .fontDesign(.serif)
+                   
+                    Text("")
+                    
+                    Text("988")
+                        .font(.title3)
+                        .fontWeight(.medium)
+                        .foregroundColor(Color.blue)
+                        .fontDesign(.serif)
+                }
+                .padding()
+                
+                Spacer()
+                
+                VStack{
+                    Text("Childhelp National Child Abuse Hotline")
+                        .fontWeight(.bold)
+                        .multilineTextAlignment(.center)
+                        .font(.title2)
+                        .fontDesign(.serif)
+                   
+                    Text("")
+                    
+                    Text("(800) 422-4453")
+                        .font(.title3)
+                        .fontWeight(.medium)
+                        .foregroundColor(Color.blue)
+                        .fontDesign(.serif)
+                }
+                .padding()
+                Spacer()
+                
+                VStack{
+                    Text("Crisis Text Line")
+                        .font(.title2)
+                        .fontWeight(.bold)
+                        .fontDesign(.serif)
+                   
+                    Text("")
+                    
+                    Text("Text HOME to 741741")
+                        .font(.title3)
+                       
+                        .fontWeight(.medium)
+                        .foregroundColor(Color.blue)
+                        .fontDesign(.serif)
+                        
             }
+                .padding()
+                Spacer()
+                
+                VStack{
+                    Text("National Sexual Assault Hotline")
+                        .font(.title2)
+                        .multilineTextAlignment(.center)
+                        .fontDesign(.serif)
+                        .fontWeight(.bold)
+                   
+                    Text("")
+                    
+                    Text("(800) 656-4673")
+                        .fontWeight(.medium)
+                        .foregroundColor(Color.blue)
+                        .multilineTextAlignment(.center)
+                        .font(.title3)
+                        .fontDesign(.serif)
+                }
+                .padding()
+                Spacer()
         
             
-            .toolbar{
-               
-                ToolbarItemGroup(placement: .status){
-                 
-                    
-                    HStack{
+                    .toolbar(){
+                       
                         
-                        NavigationLink(destination: CalenderView())
-                            {
-                               
-                            VStack{
-                                Image(systemName: "calendar")
-                                    .foregroundColor(.white)
-                                    .font(.largeTitle)
-                                Text("Calendar")
-                                    .foregroundColor(.white)
-                                    .font(.title3)
-                            }
-                            .padding()
-                            
-                            
-                            
-                            NavigationLink(destination:homeView()){
-                                VStack{
-                                    Image(systemName: "house")
-                                        .foregroundColor(.white)
-                                        .font(.largeTitle)
-                                    Text("Home")
-                                        .foregroundColor(.white)
-                                        .font(.title3)
+                            ToolbarItemGroup(placement: .status){
+                                
+                                
+                                ZStack{
+                                 
+                                Color(Tangerine)
+                                        .frame(width: 500)
+                                
+                                    HStack{
+                                        
+                                        
+                                        NavigationLink(destination: CalenderView())
+                                        {
+                                            
+                                            VStack{
+                                                Image(systemName: "calendar")
+                                                    .foregroundColor(.white)
+                                                    .font(.largeTitle)
+                                                Text("Calendar")
+                                                    .foregroundColor(.white)
+                                                    .font(.title3)
+                                            }
+                                            .padding()
+                                            
+                                            
+                                            
+                                            NavigationLink(destination:homeView()){
+                                                VStack{
+                                                    Image(systemName: "house")
+                                                        .foregroundColor(.white)
+                                                        .font(.largeTitle)
+                                                    Text("Home")
+                                                        .foregroundColor(.white)
+                                                        .font(.title3)
+                                                }
+                                            }
+                                            .padding()
+                                            
+                                            NavigationLink(destination:HotlineView()){
+                                                VStack{
+                                                    Image(systemName:"phone")
+                                                        .foregroundColor(.white)
+                                                        .font(.largeTitle)
+                                                    Text("Hotlines")
+                                                        .foregroundColor(.white)
+                                                        .font(.title3)
+                                                }
+                                            }
+                                            .padding()
+                                            
+                                        }
+                                    }
                                 }
                             }
-                            .padding()
-                            
-                            NavigationLink(destination:HotlineView()){
-                                VStack{
-                                    Image(systemName:"phone")
-                                        .foregroundColor(.white)
-                                        .font(.largeTitle)
-                                    Text("Home")
-                                        .foregroundColor(.white)
-                                        .font(.title3)
-                                }
-                            }
-                            .padding()
-                            
-                        }
-                    }
-                    }
+                    
+
+                }
+                
+                    .navigationBarTitleDisplayMode(.inline)
+                    .navigationBarBackButtonHidden()
+                    
+                                  
                 }
             }
         }

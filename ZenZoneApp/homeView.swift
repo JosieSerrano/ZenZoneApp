@@ -33,7 +33,8 @@ struct homeView: View {
         
         NavigationStack{
             
-            
+           
+
             
             ZStack{
                 
@@ -107,9 +108,12 @@ struct homeView: View {
                     Spacer(minLength: 100)
                    
                 }
-               
+                
                 .toolbar{
+                   
                     ToolbarItemGroup(placement: .status){
+                        
+                       
                        
                             HStack{
                               
@@ -150,13 +154,21 @@ struct homeView: View {
                                 }
                                 .padding()
                             }
+                              
                         }
+                      
                     }
+                  
                 }
+                
+              
+              
                 
             }
             
         }
+        
+            
         
     }
     
