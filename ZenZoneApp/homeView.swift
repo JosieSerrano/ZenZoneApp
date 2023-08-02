@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct homeView: View {
-    @State var showResourceTwoView: Bool = false
     
     //Light Peach
     
@@ -26,7 +25,7 @@ struct homeView: View {
     
     let rosyCheeks = UIColor(red: 0.996078431372549, green: 0.8549019607843137, blue: 0.8392156862745098, alpha: 1.0)
     
-    @State var tabSelection = 1
+    
     var body: some View {
         
         
@@ -40,79 +39,129 @@ struct homeView: View {
                 
                 Color(teaGreen).ignoresSafeArea()
                 //add zen zone title on the top of each view
-              
-                NavigationLink(destination:Resource_1()) {
-                    Text("Having Trouble Breathing?")
-                }
-                                        .fontDesign(.serif)
-                                        .position(x:-10, y:-75)
-                                        .frame(width: 180, height: 250)
-                                        .multilineTextAlignment(.center)
-                                        .buttonStyle(.borderedProminent)
-                                        .tint(.white)
-                                        .font(.title)
-                                        .foregroundColor(.gray)
-                                        .padding()
+                VStack{
+                    HStack{
+                        
+                        NavigationLink(destination:Resource_1()) {
+                            Text("Having Trouble Breathing?")
+                        }
+                        .fontDesign(.serif)
+                        
+                        .frame(width: 180, height: 250)
+                        .multilineTextAlignment(.center)
+                        .buttonStyle(.borderedProminent)
+                        .tint(.white)
+                        .font(.title)
+                        .foregroundColor(.gray)
+                        .padding()
+                        
+                        
+                        NavigationLink(destination:Resource_2()) {
+                            Text("Stressful Surroudings?")
+                        }
+                        .fontDesign(.serif)
+                        
+                        .frame(width: 180, height: 250)
+                        .multilineTextAlignment(.center)
+                        .buttonStyle(.borderedProminent)
+                        .tint(.white)
+                        .font(.title)
+                        .foregroundColor(.gray)
+                        .padding()
+                        
+                    }
+                    .padding()
                     
-                
-                NavigationLink(destination:Resource_2()) {
-                    Text("Stressful Surroudings?")
-                }
-                                        .fontDesign(.serif)
-                                        .position(x:179, y:-75)
-                                        .frame(width: 180, height: 250)
-                                        .multilineTextAlignment(.center)
-                                        .buttonStyle(.borderedProminent)
-                                        .tint(.white)
-                                        .font(.title)
-                                        .foregroundColor(.gray)
-                                        .padding()
-
-                NavigationLink(destination:Resource_3()) {
-                    Text("Trouble With Thoughts?")
-                }
-                                        .fontDesign(.serif)
-                                        .position(x:-10, y:300)
-                                        .frame(width: 180, height: 250)
-                                        .multilineTextAlignment(.center)
-                                        .buttonStyle(.borderedProminent)
-                                        .tint(.white)
-                                        .font(.title)
-                                        .foregroundColor(.gray)
-                                        .padding()
-
+                    Image("Koala")
+                        .resizable()
+                        .frame(width:150, height: 150)
                     
-                NavigationLink(destination:Resource_4()) {
-                    Text("In Need Of A Distraction?")
-                }
-                                        .fontDesign(.serif)
-                                        .position(x:179, y:300)
-                                        .frame(width: 180, height: 250)
-                                        .multilineTextAlignment(.center)
-                                        .buttonStyle(.borderedProminent)
-                                        .tint(.white)
-                                        .font(.title)
-                                        .foregroundColor(.gray)
-                                        .padding()
-                
-                Image("Koala")
-                    .resizable()
-                    .frame(width:150, height: 150)
                     
+                    HStack{
+                        NavigationLink(destination:Resource_3()) {
+                            Text("Want To Simplify Your Thoughts?")
+                        }
+                        .fontDesign(.serif)
+                        .frame(width: 180, height: 250)
+                        .multilineTextAlignment(.center)
+                        .buttonStyle(.borderedProminent)
+                        .tint(.white)
+                        .font(.title)
+                        .foregroundColor(.gray)
+                        .padding()
+                        
+                        
+                        NavigationLink(destination:Resource_4()) {
+                            Text("In Need Of A Distraction?")
+                        }
+                        .fontDesign(.serif)
+                        .frame(width: 180, height: 250)
+                        .multilineTextAlignment(.center)
+                        .buttonStyle(.borderedProminent)
+                        .tint(.white)
+                        .font(.title)
+                        .foregroundColor(.gray)
+                        .padding()
+                    }
+               
+                    Spacer(minLength: 100)
+                   
+                }
+               
+                .toolbar{
+                    ToolbarItemGroup(placement: .status){
+                       
+                            HStack{
+                              
+                                    NavigationLink(destination: CalenderView() ){
+                                        VStack{
+                                    Image(systemName: "calendar")
+                                        .foregroundColor(.white)
+                                        .font(.largeTitle)
+                                    Text("Calendar")
+                                        .foregroundColor(.white)
+                                        .font(.title3)
+                                }
+                                .padding()
+                                
+                                
+                           
+                                    NavigationLink(destination:homeView()){
+                                        VStack{
+                                        Image(systemName: "house")
+                                            .foregroundColor(.white)
+                                            .font(.largeTitle)
+                                        Text("Home")
+                                            .foregroundColor(.white)
+                                            .font(.title3)
+                                    }
+                                }
+                                .padding()
+                                
+                                        NavigationLink(destination:HotlineView()){
+                                            VStack{
+                                                Image(systemName:"phone")
+                                                    .foregroundColor(.white)
+                                                    .font(.largeTitle)
+                                                Text("Hotlines")
+                                                    .foregroundColor(.white)
+                                                    .font(.title3)
+                                            }
+                                }
+                                .padding()
+                            }
+                        }
+                    }
                 }
                 
             }
-            
-            
             
         }
         
     }
     
     
-    
-
-
+}
     
     
     

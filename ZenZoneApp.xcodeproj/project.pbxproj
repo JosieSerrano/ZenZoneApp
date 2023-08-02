@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9A261D72A79DEFC005E8451 /* HotlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A261D62A79DEFC005E8451 /* HotlineView.swift */; };
 		BD1A01B82A796CA1000F128D /* CalenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1A01B72A796CA1000F128D /* CalenderView.swift */; };
 		BD6713CC2A780FBC003A483C /* ZenZoneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6713CB2A780FBC003A483C /* ZenZoneAppApp.swift */; };
 		BD6713CE2A780FBC003A483C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6713CD2A780FBC003A483C /* ContentView.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B9A261D62A79DEFC005E8451 /* HotlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotlineView.swift; sourceTree = "<group>"; };
 		BD1A01B72A796CA1000F128D /* CalenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderView.swift; sourceTree = "<group>"; };
 		BD6713C82A780FBC003A483C /* ZenZoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenZoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6713CB2A780FBC003A483C /* ZenZoneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenZoneAppApp.swift; sourceTree = "<group>"; };
@@ -66,8 +68,9 @@
 				BD6713CB2A780FBC003A483C /* ZenZoneAppApp.swift */,
 				BD6713CD2A780FBC003A483C /* ContentView.swift */,
 				BD6713DB2A781B6D003A483C /* homeView.swift */,
-				BD74E5732A78419000F9A99F /* Resource 1.swift */,
+				B9A261D62A79DEFC005E8451 /* HotlineView.swift */,
 				BD1A01B72A796CA1000F128D /* CalenderView.swift */,
+				BD74E5732A78419000F9A99F /* Resource 1.swift */,
 				BD74E5752A78419F00F9A99F /* Resource 2.swift */,
 				BD74E5772A7841AB00F9A99F /* Resource 3.swift */,
 				BD74E5792A7841B700F9A99F /* Resource 4.swift */,
@@ -161,6 +164,7 @@
 				BD6713CE2A780FBC003A483C /* ContentView.swift in Sources */,
 				BD6713CC2A780FBC003A483C /* ZenZoneAppApp.swift in Sources */,
 				BD74E5762A78419F00F9A99F /* Resource 2.swift in Sources */,
+				B9A261D72A79DEFC005E8451 /* HotlineView.swift in Sources */,
 				BD74E5782A7841AB00F9A99F /* Resource 3.swift in Sources */,
 				BD6713DC2A781B6D003A483C /* homeView.swift in Sources */,
 			);
