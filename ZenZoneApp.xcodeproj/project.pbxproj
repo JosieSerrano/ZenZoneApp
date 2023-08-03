@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B9A261D72A79DEFC005E8451 /* HotlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9A261D62A79DEFC005E8451 /* HotlineView.swift */; };
-		BD1A01B82A796CA1000F128D /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1A01B72A796CA1000F128D /* LogView.swift */; };
 		BD6713CC2A780FBC003A483C /* ZenZoneAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6713CB2A780FBC003A483C /* ZenZoneAppApp.swift */; };
 		BD6713CE2A780FBC003A483C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6713CD2A780FBC003A483C /* ContentView.swift */; };
 		BD6713D02A780FBE003A483C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD6713CF2A780FBE003A483C /* Assets.xcassets */; };
@@ -18,17 +17,15 @@
 		BD74E5762A78419F00F9A99F /* Resource 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74E5752A78419F00F9A99F /* Resource 2.swift */; };
 		BD74E5782A7841AB00F9A99F /* Resource 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74E5772A7841AB00F9A99F /* Resource 3.swift */; };
 		BD74E57A2A7841B700F9A99F /* Resource 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD74E5792A7841B700F9A99F /* Resource 4.swift */; };
+		BD840CFA2A7BDD36000BFAEE /* LogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD840CF92A7BDD36000BFAEE /* LogView.swift */; };
 		BDD82C812A7AAC86006B3C3B /* Activity 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD82C802A7AAC86006B3C3B /* Activity 2.swift */; };
 		BDD82C832A7AAD45006B3C3B /* Activity 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD82C822A7AAD45006B3C3B /* Activity 3.swift */; };
 		BDD82C852A7AAD59006B3C3B /* Activity 1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD82C842A7AAD59006B3C3B /* Activity 1.swift */; };
 		BDD82C872A7AAD65006B3C3B /* Activity 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD82C862A7AAD65006B3C3B /* Activity 4.swift */; };
-		BDD82C892A7AC309006B3C3B /* NewLogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD82C882A7AC309006B3C3B /* NewLogEntry.swift */; };
-		BDD82C8B2A7AC33A006B3C3B /* LogEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD82C8A2A7AC33A006B3C3B /* LogEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B9A261D62A79DEFC005E8451 /* HotlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotlineView.swift; sourceTree = "<group>"; };
-		BD1A01B72A796CA1000F128D /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		BD6713C82A780FBC003A483C /* ZenZoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZenZoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD6713CB2A780FBC003A483C /* ZenZoneAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenZoneAppApp.swift; sourceTree = "<group>"; };
 		BD6713CD2A780FBC003A483C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,12 +36,11 @@
 		BD74E5752A78419F00F9A99F /* Resource 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource 2.swift"; sourceTree = "<group>"; };
 		BD74E5772A7841AB00F9A99F /* Resource 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource 3.swift"; sourceTree = "<group>"; };
 		BD74E5792A7841B700F9A99F /* Resource 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource 4.swift"; sourceTree = "<group>"; };
+		BD840CF92A7BDD36000BFAEE /* LogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogView.swift; sourceTree = "<group>"; };
 		BDD82C802A7AAC86006B3C3B /* Activity 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity 2.swift"; sourceTree = "<group>"; };
 		BDD82C822A7AAD45006B3C3B /* Activity 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity 3.swift"; sourceTree = "<group>"; };
 		BDD82C842A7AAD59006B3C3B /* Activity 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity 1.swift"; sourceTree = "<group>"; };
 		BDD82C862A7AAD65006B3C3B /* Activity 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Activity 4.swift"; sourceTree = "<group>"; };
-		BDD82C882A7AC309006B3C3B /* NewLogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLogEntry.swift; sourceTree = "<group>"; };
-		BDD82C8A2A7AC33A006B3C3B /* LogEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,10 +76,8 @@
 				BD6713CB2A780FBC003A483C /* ZenZoneAppApp.swift */,
 				BD6713CD2A780FBC003A483C /* ContentView.swift */,
 				BD6713DB2A781B6D003A483C /* homeView.swift */,
+				BD840CF92A7BDD36000BFAEE /* LogView.swift */,
 				B9A261D62A79DEFC005E8451 /* HotlineView.swift */,
-				BD1A01B72A796CA1000F128D /* LogView.swift */,
-				BDD82C882A7AC309006B3C3B /* NewLogEntry.swift */,
-				BDD82C8A2A7AC33A006B3C3B /* LogEntry.swift */,
 				BD74E5732A78419000F9A99F /* Resource 1.swift */,
 				BDD82C842A7AAD59006B3C3B /* Activity 1.swift */,
 				BD74E5752A78419F00F9A99F /* Resource 2.swift */,
@@ -176,16 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDD82C892A7AC309006B3C3B /* NewLogEntry.swift in Sources */,
 				BDD82C872A7AAD65006B3C3B /* Activity 4.swift in Sources */,
-				BDD82C8B2A7AC33A006B3C3B /* LogEntry.swift in Sources */,
 				BD74E57A2A7841B700F9A99F /* Resource 4.swift in Sources */,
 				BDD82C852A7AAD59006B3C3B /* Activity 1.swift in Sources */,
 				BD74E5742A78419000F9A99F /* Resource 1.swift in Sources */,
-				BD1A01B82A796CA1000F128D /* LogView.swift in Sources */,
 				BDD82C832A7AAD45006B3C3B /* Activity 3.swift in Sources */,
 				BD6713CE2A780FBC003A483C /* ContentView.swift in Sources */,
 				BD6713CC2A780FBC003A483C /* ZenZoneAppApp.swift in Sources */,
+				BD840CFA2A7BDD36000BFAEE /* LogView.swift in Sources */,
 				BD74E5762A78419F00F9A99F /* Resource 2.swift in Sources */,
 				BDD82C812A7AAC86006B3C3B /* Activity 2.swift in Sources */,
 				B9A261D72A79DEFC005E8451 /* HotlineView.swift in Sources */,

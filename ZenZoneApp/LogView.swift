@@ -1,13 +1,16 @@
 //
-//  CalenderView.swift
+//  LogView.swift
 //  ZenZoneApp
 //
-//  Created by Scholar on 8/1/23.
+//  Created by Scholar on 8/3/23.
 //
 
 import SwiftUI
 
 struct LogView: View {
+    
+    //Light Peach
+    
     let lightPeach = UIColor(red: 0.996078431372549, green: 0.8705882352941177, blue: 0.807843137254902, alpha: 1)
     
     //Tea Green
@@ -23,79 +26,125 @@ struct LogView: View {
     let rosyCheeks = UIColor(red: 0.996078431372549, green: 0.8549019607843137, blue: 0.8392156862745098, alpha: 1.0)
     
     
-    @State var ToDoItems : [ToDoItem] = []
-    @State private var showNewTask = false
-    
     var body: some View {
-        
-      
-                                
-
+       
+        NavigationView{
+            ZStack{
+                
+                Color(rosyCheeks).ignoresSafeArea()
                 VStack{
+                    Text("August")
+                        .fontDesign(.serif)
+                        .fontWeight(.bold)
+                        .font(.largeTitle)
+                        .foregroundColor(Color(Tangerine))
+                    Image("Calendar")
+                        .resizable()
+                        .frame(width:400, height:310)
                     
+                        .padding()
                     
+                        Text("How are you feeling today?")
+                            .fontDesign(.serif)
+                            .fontWeight(.bold)
+                            .font(.title)
+                            .foregroundColor(Color(Tangerine))
+                            .multilineTextAlignment(.center)
+                 
+                        Image("Moods")
+                        .resizable()
+                        .frame(width:400, height:100)
                     
-                    
-                    
-                    HStack{
+                    Button("Enter Written Entry"){
                         
-                        Text("Log Entries")
-                            .font(.system(size:40))
-                            .fontWeight(.black)
-                        Spacer()
-                        
-                        
-                        Button( action:   {
-                            showNewTask = true
-                            
-                        }){
-                            Text("+")
-                                .font(.largeTitle)
-                        }
                     }
-                    .padding()
+                    .tint(Color(Tangerine))
+                    .buttonStyle(.borderedProminent)
+                    .cornerRadius(100)
+                    .fontWeight(.bold)
+                    .font(.title3)
+                   
+                    Button("Enter Voice Entry"){
+                        
+                    }
+                    .tint(Color(Tangerine))
+                    .buttonStyle(.borderedProminent)
+                    .cornerRadius(100)
+                    .fontWeight(.bold)
+                    .font(.title3)
                     
+                          
                     Spacer()
+
+                    
                     
                 }
-                
-                List {
-                    ForEach(ToDoItems){ToDoItem in
-                        
-                        if ToDoItem.isImportant == true {
-                            Text("!! " + ToDoItem.title)
-                        }else{
-                            Text(ToDoItem.title)
+                .toolbar(){
+                   
+                    
+                        ToolbarItemGroup(placement: .status){
                             
+                            
+                            ZStack{
+                             
+                            Color(Tangerine)
+                                    .frame(width: 500)
+                            
+                                HStack{
+                                    
+                                    
+                                    NavigationLink(destination: LogView())
+                                    {
+                                        
+                                        VStack{
+                                            Image(systemName: "book.closed")
+                                                .foregroundColor(.white)
+                                                .font(.largeTitle)
+                                            Text("Log")
+                                                .foregroundColor(.white)
+                                                .font(.title3)
+                                        }
+                                        .padding()
+                                        
+                                        
+                                        
+                                        NavigationLink(destination:homeView()){
+                                            VStack{
+                                                Image(systemName: "house")
+                                                    .foregroundColor(.white)
+                                                    .font(.largeTitle)
+                                                Text("Home")
+                                                    .foregroundColor(.white)
+                                                    .font(.title3)
+                                            }
+                                        }
+                                        .padding()
+                                        
+                                        NavigationLink(destination:HotlineView()){
+                                            VStack{
+                                                Image(systemName:"phone")
+                                                    .foregroundColor(.white)
+                                                    .font(.largeTitle)
+                                                Text("Hotlines")
+                                                    .foregroundColor(.white)
+                                                    .font(.title3)
+                                            }
+                                        }
+                                        .padding()
+                                        
+                                    }
+                                }
+                            }
                         }
-                    }
-                }
                 
-                .listStyle(.plain)
-                
-                if showNewTask {
-                    NewLogEntry(title: "", isImportant: false, ToDoItems: $ToDoItems, showNewTask: $showNewTask)
-                }
+
+            }
             
-        
-        
+            }
             
-}
-        
+        }
     }
-
-
-    
-
-        
-        
-        
-        
-        
-        
-        
-        
-    
+}
 
 struct LogView_Previews: PreviewProvider {
     static var previews: some View {
