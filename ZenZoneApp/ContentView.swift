@@ -45,10 +45,14 @@ struct ContentView: View {
                 
                 
                 VStack{
-                    Text("Welcome to Zen Zone!")
+                    Text("Welcome To Zen Zone!")
                         .font(.largeTitle)
-                        .bold()
+                        .multilineTextAlignment(.center)
                         .padding()
+                        .fontDesign(.serif)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color(Tangerine))
+                        .dynamicTypeSize(/*@START_MENU_TOKEN@*/.accessibility1/*@END_MENU_TOKEN@*/)
                     
                     //                    Text("Login")
                     //                            .font(.largeTitle)
@@ -81,7 +85,6 @@ struct ContentView: View {
                     .tint(.white)
                     .font(.title)
                     .foregroundColor(Color(Tangerine))
-                    .padding()
                     
                     
                                     

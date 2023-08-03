@@ -14,6 +14,7 @@ struct Activity_2: View {
     @State private var hear = "List 3 Things You Can Hear..."
     @State private var smell = "List 2 Things You Can Smell..."
     @State private var taste = "List 1 Thing You Can Taste..."
+   
     
     
     //Light Peach
@@ -33,11 +34,12 @@ struct Activity_2: View {
                 .ignoresSafeArea()
             
             VStack{
+               Spacer()
                 Text("54321 Exercise")
-                    .font(.largeTitle)
-                    .fontWeight(.light)
                     .fontDesign(.serif)
-
+                    .fontWeight(.bold)
+                    .font(.largeTitle)
+                    .foregroundColor(Color(Tangerine))
             //List 5 things you can see
                 
                 TextEditor(text: $see)
@@ -91,16 +93,18 @@ struct Activity_2: View {
                 
                 
                 Button(action: {
-                    see = ""
-                    touch = ""
-                    hear = ""
-                    smell = ""
-                    taste = ""
+                    see = "List 5 Things You Can See..."
+                    touch = "List 4 Things You Can Touch..."
+                    hear = "List 3 Things You Can Hear..."
+                    smell = "List 2 Things You Can Smell..."
+                    taste = "List 1 Thing You Can Taste..."
                 })    {
-                Text("Clear")
+                Text("Reset")
+                        .fontDesign(.serif)
+                        .fontWeight(.bold)
                         .font(.title)
-                        .fontWeight(.regular)
-                        .foregroundColor(Color(.black))
+                        .foregroundColor(Color(Tangerine))
+                       
                 }
             }
         }
