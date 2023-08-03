@@ -69,8 +69,10 @@ struct ContentView: View {
                         .cornerRadius(10)
                     
                     
-                    NavigationLink(destination:homeView()) {
+                    NavigationLink(destination:homeView().navigationBarBackButtonHidden(true))
+                      {
                         Text("Login")
+
                     }
                     .fontDesign(.serif)
                     .frame(width: 180, height: 250)
@@ -80,13 +82,13 @@ struct ContentView: View {
                     .font(.title)
                     .foregroundColor(Color(Tangerine))
                     .padding()
-                                
+                    
+                    
+                                    
                             }
                
                 }
-                           
-            .navigationBarBackButtonHidden(false)
-            .navigationBarHidden(false)
+        
 
                         }
                     

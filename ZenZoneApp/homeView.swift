@@ -119,7 +119,7 @@ struct homeView: View {
                         
                         HStack{
                             
-                            NavigationLink(destination: LogView() ){
+                            NavigationLink(destination: LogView().navigationBarBackButtonHidden(true) ){
                                 VStack{
                                     Image(systemName: "book.closed")
                                         .foregroundColor(.white)
@@ -127,12 +127,13 @@ struct homeView: View {
                                     Text("Log")
                                         .foregroundColor(.white)
                                         .font(.title3)
+                                        
                                 }
                                 .padding()
                                 
                                 
                                 
-                                NavigationLink(destination:homeView()){
+                                NavigationLink(destination:homeView().navigationBarBackButtonHidden(true)){
                                     VStack{
                                         Image(systemName: "house")
                                             .foregroundColor(.white)
@@ -140,11 +141,12 @@ struct homeView: View {
                                         Text("Home")
                                             .foregroundColor(.white)
                                             .font(.title3)
+                                           
                                     }
                                 }
                                 .padding()
                                 
-                                NavigationLink(destination:HotlineView()){
+                                NavigationLink(destination:HotlineView().navigationBarBackButtonHidden(true)){
                                     VStack{
                                         Image(systemName:"phone")
                                             .foregroundColor(.white)
@@ -152,6 +154,7 @@ struct homeView: View {
                                         Text("Hotlines")
                                             .foregroundColor(.white)
                                             .font(.title3)
+                                           
                                     }
                                     
                                     
@@ -170,8 +173,7 @@ struct homeView: View {
 
                 
             }
-        .navigationBarBackButtonHidden(false)
-        .navigationBarHidden(false)
+     
             
         }
         

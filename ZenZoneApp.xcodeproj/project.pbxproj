@@ -32,7 +32,7 @@
 		BD6713CF2A780FBE003A483C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD6713D22A780FBE003A483C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD6713DB2A781B6D003A483C /* homeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeView.swift; sourceTree = "<group>"; };
-		BD74E5732A78419000F9A99F /* Resource 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource 1.swift"; sourceTree = "<group>"; };
+		BD74E5732A78419000F9A99F /* Resource 1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource 1.swift"; sourceTree = "<group>"; usesTabs = 0; };
 		BD74E5752A78419F00F9A99F /* Resource 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource 2.swift"; sourceTree = "<group>"; };
 		BD74E5772A7841AB00F9A99F /* Resource 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource 3.swift"; sourceTree = "<group>"; };
 		BD74E5792A7841B700F9A99F /* Resource 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Resource 4.swift"; sourceTree = "<group>"; };

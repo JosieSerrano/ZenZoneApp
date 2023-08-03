@@ -22,23 +22,65 @@ struct Resource_4: View {
     
     let rosyCheeks = UIColor(red: 0.996078431372549, green: 0.8549019607843137, blue: 0.8392156862745098, alpha: 1.0)
     
+    var distractionParagraph = "Having anxiety can be incredibly challenging, and sometimes, the need for a distraction becomes paramount. The constant worries and tension can feel overwhelming, making it essential to find moments of respite. Engaging in activities that captivate the mind, such as reading a book, going for a walk in nature, or immersing oneself in a creative hobby, can offer temporary relief from anxious thoughts. Distractions serve as a way to temporarily shift the focus away from anxiety, providing a much-needed break to regain a sense of calm and perspective. While distractions may not solve the root causes of anxiety, they can offer valuable moments of relief and relaxation, helping individuals to navigate through difficult times more smoothly."
+    
+    
     var body: some View {
         
-        ZStack{
-            Color(teaGreen).ignoresSafeArea()
-            
-            VStack{
-                VStack{
-                    Text("Resource Page:")
-                        .fontDesign(.serif)
-                        .fontWeight(.bold)
-                        .font(.largeTitle)
-                  
-                }
-                
-                
-            }
-        }
+    
+        
+        
+     NavigationStack{
+         
+         ZStack{
+             
+             Color(teaGreen).ignoresSafeArea()
+             
+             
+             VStack{
+                 Text("Resource Page:")
+                     .fontDesign(.serif)
+                     .fontWeight(.bold)
+                     .font(.largeTitle)
+                     .foregroundColor(.white)
+                 Text("A Much Needed Break")
+                     .fontDesign(.serif)
+                     .fontWeight(.bold)
+                     .font(.title)
+                     .foregroundColor(.white)
+                 
+                 ScrollView{
+                     Text(distractionParagraph)
+                         .lineSpacing(15)
+                         .fontWeight(.regular)
+                         .fontDesign(.serif)
+                         .multilineTextAlignment(.center)
+                         .font(.title2)
+                         .foregroundColor(.black)
+                         .padding()
+                 }
+                 
+                 Spacer()
+                 
+                 
+                 NavigationLink(destination: Activity_4()){
+                     Text("Click Here For an Active Exercise")
+                 }
+                 
+                 .fontDesign(.serif)
+                 .frame(width: 380, height: 250)
+                 .multilineTextAlignment(.center)
+                 .buttonStyle(.borderedProminent)
+                 .tint(.white)
+                 .font(.title)
+                 .foregroundColor(.gray)
+                 
+                 
+             }
+             .padding()
+         }
+     }
+
     }
 }
 

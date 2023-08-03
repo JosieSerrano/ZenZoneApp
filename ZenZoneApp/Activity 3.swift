@@ -27,10 +27,10 @@ struct Activity_3: View {
     @State private var textTitle = ""
     @State private var fullText = "Start Typing Here..."
     
-    var Prompts = ["Describe a time when you felt fulfilled:", "If you could make one promise to yourself what would it be?:", "Today, I'm grateful for...:", "What is your happiest memory?:", "What are some obstacles that you've overcame?:", "Why are you feeling anxious about XYZ right now?:"]
+    var Prompts = ["Describe a time when you felt fulfilled: ", "If you could make one promise to yourself what would it be?: ", "Today, I'm grateful for...: ", "What is your happiest memory?: ", "What are some obstacles that you've overcome?: ", "Why are you feeling anxious about XYZ right now?: "]
     
     func randomPrompt() -> String {
-        let randomNumber = Int.random(in:0..<5)
+        let randomNumber = Int.random(in:0..<6)
         let randomSentence = Prompts[randomNumber]
         return randomSentence
     }

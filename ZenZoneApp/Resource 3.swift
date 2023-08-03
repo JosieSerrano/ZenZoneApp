@@ -23,18 +23,63 @@ struct Resource_3: View {
     
     let rosyCheeks = UIColor(red: 0.996078431372549, green: 0.8549019607843137, blue: 0.8392156862745098, alpha: 1.0)
     
+    var overwhelmingThoughtsParagraph = "Experiencing anxiety can lead to a flood of overwhelming thoughts that seem to consume the mind entirely. In the grip of anxiety, one's worries and fears can spiral out of control, creating a constant stream of negative scenarios and 'what if' scenarios. These thoughts may become intrusive and persistent, making it challenging to focus on anything else. The intensity of these overwhelming thoughts can lead to a sense of helplessness and emotional exhaustion. Managing overwhelming thoughts during anxiety requires patience and self-compassion. Seeking support from loved ones or a mental health professional can provide valuable tools and coping strategies to regain control over the mind and promote a calmer and more balanced outlook on life."
+    
     var body: some View {
         
-        ZStack{
+        
+        NavigationStack{
             
-            Color(teaGreen).ignoresSafeArea()
-            
-            
-            Text("Hello")
-            //        Text("What is truly the worst thing that could happen? Consider that all of your worries falter and the worst occurs anyhow. What would you do? How would you prepare? Even if that happens, you can handle it Exist with your thoughts. Let them flow through you and allow them to exist. You have the capability to restructure your thoughts. Instead of thinking you'll bomb this presentation because of your anxiety, think that it's okay to be anxious and that you can do this","Defuse the thoughts, thoughts can just be thoughts. They don't have to represent how you feel or who you are. You are having this thought, not only that but, you're just noticing that you have these thoughts","Put these thoughts into context of yourself, do they invalidate many of your great traits?","Let's take action against these thoughts. What can make you feel better? Is there anything you can do right now to change what has or will happen?")
-            //    }
+            ZStack{
+                
+                Color(teaGreen).ignoresSafeArea()
+                
+                
+                VStack{
+                    Text("Resource Page:")
+                        .fontDesign(.serif)
+                        .fontWeight(.bold)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+                    Text("Overwhelming Thoughts")
+                        .fontDesign(.serif)
+                        .fontWeight(.bold)
+                        .font(.title)
+                        .foregroundColor(.white)
+                    
+                    ScrollView{
+                        Text(overwhelmingThoughtsParagraph)
+                            .lineSpacing(15)
+                            .fontDesign(.serif)
+                            .multilineTextAlignment(.center)
+                            .font(.title2)
+                            .foregroundColor(.black)
+                            .padding()
+                    }
+                        
+                        Spacer()
+                        
+                        
+                        NavigationLink(destination: Activity_3()){
+                            Text("Click Here For a Journaling Activity")
+                        }
+                        
+                        .fontDesign(.serif)
+                        .frame(width: 380, height: 250)
+                        .multilineTextAlignment(.center)
+                        .buttonStyle(.borderedProminent)
+                        .tint(.white)
+                        .font(.title)
+                        .foregroundColor(.gray)
+                        
+                        
+                        
+                    }
+                    .padding()
+                }
+            }
         }
-    }
+    
 }
 struct Resource_3_Previews: PreviewProvider {
     static var previews: some View {

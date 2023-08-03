@@ -93,7 +93,7 @@ struct LogView: View {
                                 HStack{
                                     
                                     
-                                    NavigationLink(destination: LogView())
+                                    NavigationLink(destination: LogView().navigationBarBackButtonHidden(true))
                                     {
                                         
                                         VStack{
@@ -108,7 +108,7 @@ struct LogView: View {
                                         
                                         
                                         
-                                        NavigationLink(destination:homeView()){
+                                        NavigationLink(destination:homeView().navigationBarBackButtonHidden(true)){
                                             VStack{
                                                 Image(systemName: "house")
                                                     .foregroundColor(.white)
@@ -120,7 +120,7 @@ struct LogView: View {
                                         }
                                         .padding()
                                         
-                                        NavigationLink(destination:HotlineView()){
+                                        NavigationLink(destination:HotlineView().navigationBarBackButtonHidden(true)){
                                             VStack{
                                                 Image(systemName:"phone")
                                                     .foregroundColor(.white)
